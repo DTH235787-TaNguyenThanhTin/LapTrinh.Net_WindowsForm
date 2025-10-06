@@ -1,4 +1,4 @@
-﻿namespace Buoi3_bai2
+namespace Buoi03_Bai_2
 {
     public partial class Form1 : Form
     {
@@ -7,35 +7,10 @@
             InitializeComponent();
         }
 
-        private void groupBox1_Enter(object sender, EventArgs e)
+        private void Form1_Load(object sender, EventArgs e)
         {
-
-        }
-
-        private void textBox1_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void btnDangnhap_Click(object sender, EventArgs e)
-        {
-            if((this.txtUser.Text == "") || (this.txtPass.Text == ""))
-                MessageBox.Show("Vui lòng nhập tên người dùng hoặc mật khẩu");
-            else
-            {
-                if ((this.txtUser.Text == "nguyenvanhung") && (this.txtPass.Text == "abc12345"))
-                {
-                    MessageBox.Show("Đăng nhập thành công", "Thông báo");
-                    this.Close();
-                }
-                else
-                {
-                    MessageBox.Show("Tên và mật khẩu không đúng, hãy nhập lại", "Thông báo");
-                    this.txtUser.Clear();
-                    this.txtPass.Clear(); this.txtUser.Focus();
-                }
-            }
-
+            Form2 f2 = new Form2();
+            f2.ShowDialog(); // show form2 first
         }
     }
 }

@@ -1,4 +1,4 @@
-﻿namespace Buoi3_bai3
+﻿namespace Buoi03_Bai_3
 {
     partial class Form3
     {
@@ -28,73 +28,78 @@
         /// </summary>
         private void InitializeComponent()
         {
-            label1 = new Label();
-            btnOk = new Button();
             btnReset = new Button();
-            txtKq = new ListBox();
+            btnOk = new Button();
+            label1 = new Label();
             cboWeb = new ComboBox();
+            txtKQ = new TextBox();
             SuspendLayout();
-            // 
-            // label1
-            // 
-            label1.AutoSize = true;
-            label1.Location = new Point(91, 68);
-            label1.Name = "label1";
-            label1.Size = new Size(142, 25);
-            label1.TabIndex = 14;
-            label1.Text = "Lien ket website ";
-            // 
-            // btnOk
-            // 
-            btnOk.Location = new Point(91, 222);
-            btnOk.Name = "btnOk";
-            btnOk.Size = new Size(137, 51);
-            btnOk.TabIndex = 11;
-            btnOk.Text = "OK";
-            btnOk.UseVisualStyleBackColor = true;
-            btnOk.Click += btnOk_Click;
             // 
             // btnReset
             // 
-            btnReset.Location = new Point(251, 222);
+            btnReset.Location = new Point(355, 56);
+            btnReset.Margin = new Padding(4, 3, 4, 3);
             btnReset.Name = "btnReset";
-            btnReset.Size = new Size(137, 51);
-            btnReset.TabIndex = 12;
+            btnReset.Size = new Size(114, 37);
+            btnReset.TabIndex = 13;
             btnReset.Text = "Reset";
             btnReset.UseVisualStyleBackColor = true;
             btnReset.Click += btnReset_Click;
             // 
-            // txtKq
+            // btnOk
             // 
-            txtKq.FormattingEnabled = true;
-            txtKq.ItemHeight = 25;
-            txtKq.Location = new Point(456, 115);
-            txtKq.Name = "txtKq";
-            txtKq.Size = new Size(253, 179);
-            txtKq.TabIndex = 13;
+            btnOk.Location = new Point(224, 56);
+            btnOk.Margin = new Padding(4, 3, 4, 3);
+            btnOk.Name = "btnOk";
+            btnOk.Size = new Size(114, 37);
+            btnOk.TabIndex = 12;
+            btnOk.Text = "Ok";
+            btnOk.UseVisualStyleBackColor = true;
+            btnOk.Click += btnOk_Click;
+            // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Font = new Font("Times New Roman", 12F, FontStyle.Bold | FontStyle.Italic | FontStyle.Underline, GraphicsUnit.Point, 0);
+            label1.Location = new Point(18, 13);
+            label1.Margin = new Padding(4, 0, 4, 0);
+            label1.Name = "label1";
+            label1.Size = new Size(173, 28);
+            label1.TabIndex = 10;
+            label1.Text = "Liên kết website";
             // 
             // cboWeb
             // 
             cboWeb.FormattingEnabled = true;
-            cboWeb.Items.AddRange(new object[] { "lien ket website" });
-            cboWeb.Location = new Point(91, 115);
+            cboWeb.Location = new Point(18, 56);
             cboWeb.Name = "cboWeb";
-            cboWeb.Size = new Size(182, 33);
-            cboWeb.TabIndex = 15;
-            cboWeb.SelectedIndexChanged += cboWeb_SelectedIndexChanged;
+            cboWeb.Size = new Size(186, 35);
+            cboWeb.TabIndex = 14;
+            // 
+            // txtKQ
+            // 
+            txtKQ.Location = new Point(18, 97);
+            txtKQ.Margin = new Padding(4, 3, 4, 3);
+            txtKQ.Multiline = true;
+            txtKQ.Name = "txtKQ";
+            txtKQ.Size = new Size(451, 148);
+            txtKQ.TabIndex = 15;
             // 
             // Form3
             // 
-            AutoScaleDimensions = new SizeF(10F, 25F);
+            AutoScaleDimensions = new SizeF(13F, 27F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
+            AutoSize = true;
+            ClientSize = new Size(501, 272);
+            Controls.Add(txtKQ);
             Controls.Add(cboWeb);
-            Controls.Add(label1);
-            Controls.Add(txtKq);
             Controls.Add(btnReset);
             Controls.Add(btnOk);
+            Controls.Add(label1);
+            Font = new Font("Times New Roman", 12F);
+            Margin = new Padding(4, 3, 4, 3);
             Name = "Form3";
-            Text = "Form3";
+            Text = "FormWebLinks";
             Load += Form3_Load;
             ResumeLayout(false);
             PerformLayout();
@@ -102,10 +107,10 @@
 
         #endregion
 
-        private Label label1;
-        private Button btnOk;
         private Button btnReset;
-        private ListBox txtKq;
+        private Button btnOk;
+        private Label label1;
         private ComboBox cboWeb;
+        private TextBox txtKQ;
     }
 }

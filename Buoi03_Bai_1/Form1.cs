@@ -1,15 +1,10 @@
-﻿namespace bai4._1
+﻿namespace Buoi03_Bai_1
 {
-    public partial class Form1 : Form
+    public partial class From : Form
     {
-        public Form1()
+        public From()
         {
             InitializeComponent();
-        }
-
-        private void chkNho_CheckedChanged(object sender, EventArgs e)
-        {
-
         }
 
         private void btnDangnhap_Click(object sender, EventArgs e)
@@ -26,10 +21,9 @@
 
         private void btnXoa_Click(object sender, EventArgs e)
         {
-            this.txtUser.Clear();
+            this.txtUser.Clear(); // can use this.txtUser.ResetText(); 
             this.txtPass.Clear();
             this.txtUser.Focus();
-
         }
 
         private void btnDung_Click(object sender, EventArgs e)
@@ -39,6 +33,7 @@
             MessageBoxButtons.OKCancel, MessageBoxIcon.Question);
             if (traloi == DialogResult.OK)
                 Application.Exit();
+
         }
     }
 }

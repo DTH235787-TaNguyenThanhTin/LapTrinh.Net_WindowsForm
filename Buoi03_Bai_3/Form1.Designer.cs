@@ -1,6 +1,6 @@
-﻿namespace Buoi3_bai3
+﻿namespace Buoi03_Bai_3
 {
-    partial class lstWeb
+    partial class Form1
     {
         /// <summary>
         ///  Required designer variable.
@@ -28,86 +28,86 @@
         /// </summary>
         private void InitializeComponent()
         {
-            listBox1 = new ListBox();
+            label1 = new Label();
+            lstWeb = new ListBox();
             btnOk = new Button();
             btnReset = new Button();
-            txtKq = new ListBox();
-            label1 = new Label();
+            txtKQ = new TextBox();
             SuspendLayout();
             // 
-            // listBox1
+            // label1
             // 
-            listBox1.FormattingEnabled = true;
-            listBox1.ItemHeight = 25;
-            listBox1.Items.AddRange(new object[] { "Tuổi trẻ", "Thanh niên", "VNExpress", "Dân trí", "Công an" });
-            listBox1.Location = new Point(46, 73);
-            listBox1.Name = "listBox1";
-            listBox1.Size = new Size(253, 179);
-            listBox1.TabIndex = 0;
-            listBox1.SelectedIndexChanged += listBox1_SelectedIndexChanged;
+            label1.AutoSize = true;
+            label1.Font = new Font("Times New Roman", 12F, FontStyle.Bold | FontStyle.Italic | FontStyle.Underline, GraphicsUnit.Point, 0);
+            label1.Location = new Point(12, 19);
+            label1.Name = "label1";
+            label1.Size = new Size(173, 28);
+            label1.TabIndex = 0;
+            label1.Text = "Liên kết website";
+            // 
+            // lstWeb
+            // 
+            lstWeb.FormattingEnabled = true;
+            lstWeb.ItemHeight = 27;
+            lstWeb.Items.AddRange(new object[] { "Tuổi trẻ", "Thanh niên", "VNExpress", "Dân trí", "Công an" });
+            lstWeb.Location = new Point(12, 64);
+            lstWeb.Name = "lstWeb";
+            lstWeb.Size = new Size(180, 85);
+            lstWeb.TabIndex = 1;
             // 
             // btnOk
             // 
-            btnOk.Location = new Point(46, 289);
+            btnOk.Location = new Point(12, 155);
             btnOk.Name = "btnOk";
-            btnOk.Size = new Size(137, 51);
-            btnOk.TabIndex = 1;
-            btnOk.Text = "OK";
+            btnOk.Size = new Size(88, 34);
+            btnOk.TabIndex = 2;
+            btnOk.Text = "Ok";
             btnOk.UseVisualStyleBackColor = true;
             btnOk.Click += btnOk_Click;
             // 
             // btnReset
             // 
-            btnReset.Location = new Point(224, 289);
+            btnReset.Location = new Point(106, 155);
             btnReset.Name = "btnReset";
-            btnReset.Size = new Size(137, 51);
-            btnReset.TabIndex = 2;
+            btnReset.Size = new Size(88, 34);
+            btnReset.TabIndex = 3;
             btnReset.Text = "Reset";
             btnReset.UseVisualStyleBackColor = true;
             btnReset.Click += btnReset_Click;
             // 
-            // txtKq
+            // txtKQ
             // 
-            txtKq.FormattingEnabled = true;
-            txtKq.ItemHeight = 25;
-            txtKq.Location = new Point(411, 73);
-            txtKq.Name = "txtKq";
-            txtKq.Size = new Size(253, 179);
-            txtKq.TabIndex = 3;
-            txtKq.SelectedIndexChanged += txtKq_SelectedIndexChanged;
+            txtKQ.Location = new Point(218, 64);
+            txtKQ.Multiline = true;
+            txtKQ.Name = "txtKQ";
+            txtKQ.Size = new Size(150, 123);
+            txtKQ.TabIndex = 4;
             // 
-            // label1
+            // Form1
             // 
-            label1.AutoSize = true;
-            label1.Location = new Point(46, 26);
-            label1.Name = "label1";
-            label1.Size = new Size(142, 25);
-            label1.TabIndex = 4;
-            label1.Text = "Lien ket website ";
-            // 
-            // lstWeb
-            // 
-            AutoScaleDimensions = new SizeF(10F, 25F);
+            AutoScaleDimensions = new SizeF(13F, 27F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
-            Controls.Add(label1);
-            Controls.Add(txtKq);
+            AutoSize = true;
+            ClientSize = new Size(385, 206);
+            Controls.Add(txtKQ);
             Controls.Add(btnReset);
             Controls.Add(btnOk);
-            Controls.Add(listBox1);
-            Name = "lstWeb";
-            Text = "Form1";
-            Load += Form1_Load;
+            Controls.Add(lstWeb);
+            Controls.Add(label1);
+            Font = new Font("Times New Roman", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            Margin = new Padding(4, 3, 4, 3);
+            Name = "Form1";
+            Text = "FormWebLinks";
             ResumeLayout(false);
             PerformLayout();
         }
 
         #endregion
 
-        private ListBox listBox1;
+        private Label label1;
+        private ListBox lstWeb;
         private Button btnOk;
         private Button btnReset;
-        private ListBox txtKq;
-        private Label label1;
+        private TextBox txtKQ;
     }
 }

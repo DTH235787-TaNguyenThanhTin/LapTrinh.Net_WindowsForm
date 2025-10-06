@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Buoi3_bai3
+namespace Buoi03_Bai_3
 {
     public partial class Form3 : Form
     {
@@ -31,20 +31,16 @@ namespace Buoi3_bai3
             this.cboWeb.SelectedItem = "VNExpress";
         }
 
-        private void cboWeb_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
-
         private void btnOk_Click(object sender, EventArgs e)
         {
-            this.txtKq.Text = "Bạn chọn web ";
-            this.txtKq.Text += this.cboWeb.SelectedItem.ToString();
+            this.txtKQ.Text = "Bạn chọn web ";
+            this.txtKQ.Text += this.cboWeb.SelectedItem.ToString();
         }
 
         private void btnReset_Click(object sender, EventArgs e)
         {
-            this.cboWeb.SelectedItem = "VNExpress"; this.txtKq.ClearSelected();
+            this.cboWeb.SelectedItem = "VNExpress"; this.txtKQ.Clear();
+
         }
     }
 }

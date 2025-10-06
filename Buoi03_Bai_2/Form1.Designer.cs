@@ -1,4 +1,4 @@
-﻿namespace Buoi3_bai2
+﻿namespace Buoi03_Bai_2
 {
     partial class Form1
     {
@@ -28,105 +28,54 @@
         /// </summary>
         private void InitializeComponent()
         {
-            groupBox1 = new GroupBox();
-            label1 = new Label();
             label2 = new Label();
-            btnDangnhap = new Button();
-            btnThoat = new Button();
-            txtUser = new TextBox();
-            txtPass = new TextBox();
-            groupBox1.SuspendLayout();
+            label1 = new Label();
             SuspendLayout();
-            // 
-            // groupBox1
-            // 
-            groupBox1.Controls.Add(txtPass);
-            groupBox1.Controls.Add(txtUser);
-            groupBox1.Controls.Add(label2);
-            groupBox1.Controls.Add(label1);
-            groupBox1.Location = new Point(192, 99);
-            groupBox1.Name = "groupBox1";
-            groupBox1.Size = new Size(579, 241);
-            groupBox1.TabIndex = 0;
-            groupBox1.TabStop = false;
-            groupBox1.Text = "Thông tin đăng nhập";
-            groupBox1.Enter += groupBox1_Enter;
-            // 
-            // label1
-            // 
-            label1.AutoSize = true;
-            label1.Location = new Point(62, 88);
-            label1.Name = "label1";
-            label1.Size = new Size(129, 25);
-            label1.TabIndex = 0;
-            label1.Text = "Tên đăng nhập";
             // 
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(62, 148);
+            label2.Font = new Font("Segoe UI Semibold", 18F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
+            label2.ForeColor = Color.Blue;
+            label2.Location = new Point(251, 263);
+            label2.Margin = new Padding(4, 0, 4, 0);
             label2.Name = "label2";
-            label2.Size = new Size(86, 25);
-            label2.TabIndex = 1;
-            label2.Text = "Mật khẩu";
+            label2.Size = new Size(432, 48);
+            label2.TabIndex = 3;
+            label2.Text = "Trường Đại học An Giang";
             // 
-            // btnDangnhap
+            // label1
             // 
-            btnDangnhap.Location = new Point(254, 376);
-            btnDangnhap.Name = "btnDangnhap";
-            btnDangnhap.Size = new Size(112, 34);
-            btnDangnhap.TabIndex = 1;
-            btnDangnhap.Text = "Đăng nhập";
-            btnDangnhap.UseVisualStyleBackColor = true;
-            btnDangnhap.Click += btnDangnhap_Click;
-            // 
-            // btnThoat
-            // 
-            btnThoat.Location = new Point(452, 376);
-            btnThoat.Name = "btnThoat";
-            btnThoat.Size = new Size(112, 34);
-            btnThoat.TabIndex = 2;
-            btnThoat.Text = "Thoát";
-            btnThoat.UseVisualStyleBackColor = true;
-            // 
-            // txtUser
-            // 
-            txtUser.Location = new Point(208, 105);
-            txtUser.Name = "txtUser";
-            txtUser.Size = new Size(289, 31);
-            txtUser.TabIndex = 2;
-            txtUser.TextChanged += textBox1_TextChanged;
-            // 
-            // txtPass
-            // 
-            txtPass.Location = new Point(208, 148);
-            txtPass.Name = "txtPass";
-            txtPass.Size = new Size(289, 31);
-            txtPass.TabIndex = 3;
+            label1.AutoSize = true;
+            label1.Font = new Font("Segoe UI", 22F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label1.ForeColor = Color.Red;
+            label1.Location = new Point(176, 156);
+            label1.Margin = new Padding(4, 0, 4, 0);
+            label1.Name = "label1";
+            label1.Size = new Size(548, 60);
+            label1.TabIndex = 2;
+            label1.Text = "Trường Đại học An Giang";
             // 
             // Form1
             // 
-            AutoScaleDimensions = new SizeF(10F, 25F);
+            AutoScaleDimensions = new SizeF(14F, 26F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
-            Controls.Add(btnThoat);
-            Controls.Add(btnDangnhap);
-            Controls.Add(groupBox1);
+            AutoSize = true;
+            ClientSize = new Size(905, 468);
+            Controls.Add(label2);
+            Controls.Add(label1);
+            Font = new Font("Times New Roman", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            Margin = new Padding(4, 3, 4, 3);
             Name = "Form1";
-            Text = "Đăng nhập hệ thống";
-            groupBox1.ResumeLayout(false);
-            groupBox1.PerformLayout();
+            Text = "Form1";
+            Load += Form1_Load;
             ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
 
-        private GroupBox groupBox1;
-        private Label label1;
-        private TextBox txtPass;
-        private TextBox txtUser;
         private Label label2;
-        private Button btnDangnhap;
-        private Button btnThoat;
+        private Label label1;
     }
 }

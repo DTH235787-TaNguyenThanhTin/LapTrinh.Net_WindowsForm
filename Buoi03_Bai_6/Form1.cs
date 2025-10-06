@@ -1,92 +1,59 @@
-﻿namespace Buoi3_bai6
+﻿using System.Windows.Forms;
+
+namespace Buoi03_Bai_6
 {
-    public partial class lstTen : Form
+    public partial class Form1 : Form
     {
-        public lstTen()
+        public Form1()
         {
             InitializeComponent();
         }
 
-        private void txtChuoi_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void lstTen_Load(object sender, EventArgs e)
-        {
-
-        }
-
         private void btnThem_Click(object sender, EventArgs e)
         {
-            string input = txtChuoi.Text.Trim();
-            if (!string.IsNullOrEmpty(input))
-            {
-                lstChuoi.Items.Add(input);
-                txtChuoi.Clear();
-                txtChuoi.Focus();
-            }
+            this.listbox.Items.Add(this.txtChuoi.Text);
         }
 
         private void btnXoa_Click(object sender, EventArgs e)
         {
-            if (lstChuoi.SelectedIndex != -1)
+            this.listbox.Items.RemoveAt(this.listbox.SelectedIndex);
+        }
+
+        private void listbox_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            this.txtKQ.Text = this.listbox.SelectedItem.ToString();
+        }
+
+        private void btnChu_Click(object sender, EventArgs e)
+        {
+            ColorDialog cd = new ColorDialog();
+            if (cd.ShowDialog() == DialogResult.OK)
             {
-                lstChuoi.Items.RemoveAt(lstChuoi.SelectedIndex);
-                txtKq.Clear();
+                this.txtKQ.ForeColor = cd.Color;
             }
         }
 
-        private void lstChuoi_DoubleClick(object sender, EventArgs e)
+        private void btnNen_Click(object sender, EventArgs e)
         {
-            if (lstChuoi.SelectedItem != null)
+            ColorDialog cd = new ColorDialog();
+            if (cd.ShowDialog() == DialogResult.OK)
             {
-                txtKq.Text = lstChuoi.SelectedItem.ToString();
-            }
-        }
-        private void btnMauchu_Click(object sender, EventArgs e)
-        {
-            using (ColorDialog cd = new ColorDialog())
-            {
-                if (cd.ShowDialog() == DialogResult.OK)
-                {
-                    txtKq.ForeColor = cd.Color; // đổi màu chữ
-                }
+                this.txtKQ.BackColor = cd.Color;
             }
         }
 
-        private void btnMaunen_Click(object sender, EventArgs e)
+        private void BtnFont_Click(object sender, EventArgs e)
         {
-            using (ColorDialog cd = new ColorDialog())
+            FontDialog fo = new FontDialog();
+            if (fo.ShowDialog() == DialogResult.OK)
             {
-                if (cd.ShowDialog() == DialogResult.OK)
-                {
-                    txtKq.BackColor = cd.Color; // đổi màu nền
-                }
-            }
-        }
-
-        private void btnFont_Click(object sender, EventArgs e)
-        {
-            using (FontDialog fd = new FontDialog())
-            {
-                if (fd.ShowDialog() == DialogResult.OK)
-                {
-                    txtKq.Font = fd.Font; // đổi font
-                }
+                this.txtKQ.Font = fo.Font;
             }
         }
 
         private void btnDong_Click(object sender, EventArgs e)
         {
-            this.Close();
+            Application.Exit();
         }
-
-        private void txtKq_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        
     }
 }

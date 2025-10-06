@@ -1,4 +1,4 @@
-﻿namespace Buoi3_bai8
+﻿namespace Buoi03_Bai_8
 {
     partial class Form1
     {
@@ -28,57 +28,63 @@
         /// </summary>
         private void InitializeComponent()
         {
+            cbTen = new ComboBox();
             label1 = new Label();
-            cboTen = new ComboBox();
-            btnHien = new Button();
+            button1 = new Button();
             SuspendLayout();
+            // 
+            // cbTen
+            // 
+            cbTen.FormattingEnabled = true;
+            cbTen.Items.AddRange(new object[] { "Nguyen Van A", "Tran Van C", "Ly Thi D" });
+            cbTen.Location = new Point(205, 61);
+            cbTen.Margin = new Padding(4, 3, 4, 3);
+            cbTen.Name = "cbTen";
+            cbTen.Size = new Size(281, 35);
+            cbTen.TabIndex = 0;
             // 
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(143, 107);
+            label1.Location = new Point(83, 65);
+            label1.Margin = new Padding(4, 0, 4, 0);
             label1.Name = "label1";
-            label1.Size = new Size(67, 25);
-            label1.TabIndex = 0;
-            label1.Text = "Họ Tên";
+            label1.Size = new Size(83, 27);
+            label1.TabIndex = 1;
+            label1.Text = "Họ tên:";
             // 
-            // cboTen
+            // button1
             // 
-            cboTen.FormattingEnabled = true;
-            cboTen.Items.AddRange(new object[] { "Nguyen Van A", "Tran Van C" });
-            cboTen.Location = new Point(270, 99);
-            cboTen.Name = "cboTen";
-            cboTen.Size = new Size(182, 33);
-            cboTen.TabIndex = 1;
-            // 
-            // btnHien
-            // 
-            btnHien.Location = new Point(270, 200);
-            btnHien.Name = "btnHien";
-            btnHien.Size = new Size(181, 34);
-            btnHien.TabIndex = 2;
-            btnHien.Text = "Hiện Lời Chào";
-            btnHien.UseVisualStyleBackColor = true;
-            btnHien.Click += btnHien_Click;
+            button1.Location = new Point(205, 129);
+            button1.Margin = new Padding(4, 3, 4, 3);
+            button1.Name = "button1";
+            button1.Size = new Size(281, 75);
+            button1.TabIndex = 2;
+            button1.Text = "Hien loi chao";
+            button1.UseVisualStyleBackColor = true;
+            button1.Click += button1_Click;
             // 
             // Form1
             // 
-            AutoScaleDimensions = new SizeF(10F, 25F);
+            AutoScaleDimensions = new SizeF(13F, 27F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(790, 450);
-            Controls.Add(btnHien);
-            Controls.Add(cboTen);
+            AutoSize = true;
+            ClientSize = new Size(643, 298);
+            Controls.Add(button1);
             Controls.Add(label1);
+            Controls.Add(cbTen);
+            Font = new Font("Times New Roman", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            Margin = new Padding(4, 3, 4, 3);
             Name = "Form1";
-            Text = "Form1";
+            Text = "Bai8";
             ResumeLayout(false);
             PerformLayout();
         }
 
         #endregion
 
+        private ComboBox cbTen;
         private Label label1;
-        private ComboBox cboTen;
-        private Button btnHien;
+        private Button button1;
     }
 }

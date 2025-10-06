@@ -8,14 +8,4 @@
     <ImplicitUsings>enable</ImplicitUsings>
   </PropertyGroup>
 
-  <ItemGroup>
-    <ProjectReference Include="..\bai4.1\Buoi3_bai1.csproj" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Compile Update="Form2.cs">
-      <SubType>Form</SubType>
-    </Compile>
-  </ItemGroup>
-
 </Project>

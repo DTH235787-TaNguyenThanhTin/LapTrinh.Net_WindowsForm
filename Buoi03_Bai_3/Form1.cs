@@ -1,36 +1,21 @@
-namespace Buoi3_bai3
+﻿namespace Buoi03_Bai_3
 {
-    public partial class lstWeb : Form
+    public partial class Form1 : Form
     {
-        public lstWeb()
+        public Form1()
         {
             InitializeComponent();
         }
 
-        private void Form1_Load(object sender, EventArgs e)
+        private void btnOk_Click(object sender, EventArgs e)
         {
-
+            this.txtKQ.Text = "Bạn đã chọn website ";
+            this.txtKQ.Text += this.lstWeb.SelectedItem.ToString();
         }
 
         private void btnReset_Click(object sender, EventArgs e)
         {
-            this.txtKq.ClearSelected();
-        }
-
-        private void btnOk_Click(object sender, EventArgs e)
-        {
-            this.txtKq.Text = "B?n d� ch?n website ";
-            this.txtKq.Text += this.listBox1.SelectedItem.ToString();
-        }
-
-        private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void txtKq_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
+            this.txtKQ.Clear();
         }
     }
 }

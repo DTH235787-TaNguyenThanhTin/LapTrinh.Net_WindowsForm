@@ -1,4 +1,6 @@
-namespace Buoi3_bai5
+﻿using System.Security.Cryptography.X509Certificates;
+
+namespace Buoi03_Bai_5
 {
     public partial class Form1 : Form
     {
@@ -6,28 +8,22 @@ namespace Buoi3_bai5
         {
             InitializeComponent();
         }
-
-        private void groupBox1_Enter(object sender, EventArgs e)
-        {
-
-        }
-
-        private void Form1_Load(object sender, EventArgs e)
-        {
-
-        }
         public int TimMax(int so1, int so2)
         {
             if (so1 < so2)
-                return so1;
-            else
+            {
                 return so2;
+            }
+            else
+            {
+                return so1;
+            }
         }
-        public string TimUocChung(int a, int b)
+         public string TimUocChung(int a, int b)
         {
-            int max = TimMax(a, b); string chuoi = "";
-            for
-            (int i = 1; i <= max; i++)
+            int max = TimMax(a, b);
+            string chuoi = "";
+            for (int i = 1; i <= max; i++)
                 if ((a % i == 0) && (b % i == 0))
                     chuoi += " " + i.ToString();
             return chuoi;
@@ -54,9 +50,31 @@ namespace Buoi3_bai5
             a = int.Parse(this.txtN.Text);
             b = int.Parse(this.txtM.Text);
             if (this.rdo1.Checked == true)
-                this.txtKq.Text = TimUocChung(a, b);
-            if (this.rdo2.Checked == true)
-                this.txtKq.Text = timUCLN(a, b).ToString();
+            {
+                this.txtKQ.Text = TimUocChung(a, b);
+            }
+            else
+            {
+                this.txtKQ.Text = timUCLN(a, b).ToString();
+            }
+        }
+
+        private void btnXoa_Click(object sender, EventArgs e)
+        {
+            this.txtN.Clear();
+            this.txtM.Clear();
+            this.txtKQ.Clear();
+            this.rdo1.Checked = false;
+            this.rdo2.Checked = false;
+        }
+
+        private void btnThoat_Click(object sender, EventArgs e)
+        {
+            DialogResult traloi;
+            traloi = MessageBox.Show("Bạn có muốn đóng chương trình không?", "Thông báo",
+            MessageBoxButtons.OKCancel, MessageBoxIcon.Question);
+            if (traloi == DialogResult.OK)
+                Application.Exit();
         }
     }
 }

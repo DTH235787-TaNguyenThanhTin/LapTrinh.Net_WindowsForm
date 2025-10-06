@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Buoi3_bai9.Properties {
+namespace Buoi03_Bai_9.Properties {
     using System;
     
     
@@ -39,7 +39,7 @@ namespace Buoi3_bai9.Properties {
         internal static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
-                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("Buoi3_bai9.Properties.Resources", typeof(Resources).Assembly);
+                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("Buoi03_Bai_9.Properties.Resources", typeof(Resources).Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;
@@ -57,6 +57,16 @@ namespace Buoi3_bai9.Properties {
             }
             set {
                 resourceCulture = value;
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Screenshot_2025_02_04_141522 {
+            get {
+                object obj = ResourceManager.GetObject("Screenshot 2025-02-04 141522", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
             }
         }
     }

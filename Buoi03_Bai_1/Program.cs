@@ -1,4 +1,4 @@
-namespace bai4._1
+namespace Buoi03_Bai_1
 {
     internal static class Program
     {
@@ -11,7 +11,7 @@ namespace bai4._1
             // To customize application configuration such as set high DPI settings or default font,
             // see https://aka.ms/applicationconfiguration.
             ApplicationConfiguration.Initialize();
-            Application.Run(new Form1());
+            Application.Run(new From());
         }
     }
 }

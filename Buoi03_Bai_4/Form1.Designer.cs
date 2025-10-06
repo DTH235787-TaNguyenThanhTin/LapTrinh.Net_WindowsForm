@@ -1,6 +1,6 @@
-﻿namespace Buoi3_bai4
+﻿namespace Buoi03_Bai_4
 {
-    partial class txtHoTen
+    partial class Form1
     {
         /// <summary>
         ///  Required designer variable.
@@ -28,51 +28,62 @@
         /// </summary>
         private void InitializeComponent()
         {
-            label1 = new Label();
-            textBox1 = new TextBox();
+            txtHoTen = new TextBox();
+            lb1 = new Label();
             groupBox1 = new GroupBox();
-            rdoChuthuong = new RadioButton();
             rdoChuhoa = new RadioButton();
+            rdoChuthuong = new RadioButton();
             btnXoa = new Button();
             btnThoat = new Button();
-            btnKq = new Button();
-            textBox2 = new TextBox();
+            btnKQ = new Button();
+            txtKQ = new TextBox();
             groupBox1.SuspendLayout();
             SuspendLayout();
             // 
-            // label1
+            // txtHoTen
             // 
-            label1.AutoSize = true;
-            label1.Location = new Point(120, 59);
-            label1.Name = "label1";
-            label1.Size = new Size(116, 25);
-            label1.TabIndex = 0;
-            label1.Text = "Nhập họ tên ";
+            txtHoTen.Location = new Point(281, 54);
+            txtHoTen.Name = "txtHoTen";
+            txtHoTen.Size = new Size(273, 31);
+            txtHoTen.TabIndex = 0;
             // 
-            // textBox1
+            // lb1
             // 
-            textBox1.Location = new Point(261, 59);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(338, 31);
-            textBox1.TabIndex = 1;
+            lb1.AutoSize = true;
+            lb1.Font = new Font("Segoe UI", 12F, FontStyle.Underline, GraphicsUnit.Point, 0);
+            lb1.ForeColor = Color.CornflowerBlue;
+            lb1.Location = new Point(85, 51);
+            lb1.Name = "lb1";
+            lb1.Size = new Size(161, 32);
+            lb1.TabIndex = 1;
+            lb1.Text = "Nhập họ tên: ";
             // 
             // groupBox1
             // 
-            groupBox1.Controls.Add(btnThoat);
-            groupBox1.Controls.Add(btnXoa);
             groupBox1.Controls.Add(rdoChuhoa);
             groupBox1.Controls.Add(rdoChuthuong);
-            groupBox1.Location = new Point(116, 115);
+            groupBox1.Location = new Point(85, 103);
             groupBox1.Name = "groupBox1";
-            groupBox1.Size = new Size(483, 237);
+            groupBox1.Size = new Size(332, 150);
             groupBox1.TabIndex = 2;
             groupBox1.TabStop = false;
-            groupBox1.Text = "Chọn kiểu chữ ";
+            groupBox1.Text = "Chọn kiểu chữ";
+            // 
+            // rdoChuhoa
+            // 
+            rdoChuhoa.AutoSize = true;
+            rdoChuhoa.Location = new Point(28, 96);
+            rdoChuhoa.Name = "rdoChuhoa";
+            rdoChuhoa.Size = new Size(141, 29);
+            rdoChuhoa.TabIndex = 1;
+            rdoChuhoa.TabStop = true;
+            rdoChuhoa.Text = "CHỮ IN HOA";
+            rdoChuhoa.UseVisualStyleBackColor = true;
             // 
             // rdoChuthuong
             // 
             rdoChuthuong.AutoSize = true;
-            rdoChuthuong.Location = new Point(33, 87);
+            rdoChuthuong.Location = new Point(28, 46);
             rdoChuthuong.Name = "rdoChuthuong";
             rdoChuthuong.Size = new Size(133, 29);
             rdoChuthuong.TabIndex = 0;
@@ -80,65 +91,63 @@
             rdoChuthuong.Text = "Chữ thường";
             rdoChuthuong.UseVisualStyleBackColor = true;
             // 
-            // rdoChuhoa
-            // 
-            rdoChuhoa.AutoSize = true;
-            rdoChuhoa.Location = new Point(33, 150);
-            rdoChuhoa.Name = "rdoChuhoa";
-            rdoChuhoa.Size = new Size(104, 29);
-            rdoChuhoa.TabIndex = 1;
-            rdoChuhoa.TabStop = true;
-            rdoChuhoa.Text = "Chữ hoa";
-            rdoChuhoa.UseVisualStyleBackColor = true;
-            // 
             // btnXoa
             // 
-            btnXoa.Location = new Point(313, 87);
+            btnXoa.Font = new Font("Segoe UI", 14F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            btnXoa.ForeColor = SystemColors.MenuHighlight;
+            btnXoa.Location = new Point(433, 121);
             btnXoa.Name = "btnXoa";
-            btnXoa.Size = new Size(112, 34);
-            btnXoa.TabIndex = 2;
-            btnXoa.Text = "Xoá";
+            btnXoa.Size = new Size(112, 57);
+            btnXoa.TabIndex = 3;
+            btnXoa.Text = "Xóa";
             btnXoa.UseVisualStyleBackColor = true;
+            btnXoa.Click += btnXoa_Click;
             // 
             // btnThoat
             // 
-            btnThoat.Location = new Point(313, 150);
+            btnThoat.Font = new Font("Segoe UI", 14F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            btnThoat.ForeColor = SystemColors.MenuHighlight;
+            btnThoat.Location = new Point(433, 184);
             btnThoat.Name = "btnThoat";
-            btnThoat.Size = new Size(112, 34);
-            btnThoat.TabIndex = 3;
+            btnThoat.Size = new Size(112, 57);
+            btnThoat.TabIndex = 4;
             btnThoat.Text = "Thoát";
             btnThoat.UseVisualStyleBackColor = true;
+            btnThoat.Click += btnThoat_Click;
             // 
-            // btnKq
+            // btnKQ
             // 
-            btnKq.Location = new Point(116, 374);
-            btnKq.Name = "btnKq";
-            btnKq.Size = new Size(116, 41);
-            btnKq.TabIndex = 3;
-            btnKq.Text = "Kết quả";
-            btnKq.UseVisualStyleBackColor = true;
-            btnKq.Click += btnKq_Click;
+            btnKQ.Font = new Font("Segoe UI", 14F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            btnKQ.ForeColor = SystemColors.MenuHighlight;
+            btnKQ.Location = new Point(85, 259);
+            btnKQ.Name = "btnKQ";
+            btnKQ.Size = new Size(209, 57);
+            btnKQ.TabIndex = 5;
+            btnKQ.Text = "Kết quả";
+            btnKQ.UseVisualStyleBackColor = true;
+            btnKQ.Click += btnKQ_Click;
             // 
-            // textBox2
+            // txtKQ
             // 
-            textBox2.Location = new Point(261, 381);
-            textBox2.Name = "textBox2";
-            textBox2.Size = new Size(338, 31);
-            textBox2.TabIndex = 4;
+            txtKQ.Location = new Point(300, 276);
+            txtKQ.Name = "txtKQ";
+            txtKQ.Size = new Size(245, 31);
+            txtKQ.TabIndex = 6;
             // 
-            // txtHoTen
+            // Form1
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
-            Controls.Add(textBox2);
-            Controls.Add(btnKq);
+            ClientSize = new Size(585, 343);
+            Controls.Add(txtKQ);
+            Controls.Add(btnKQ);
+            Controls.Add(btnThoat);
+            Controls.Add(btnXoa);
             Controls.Add(groupBox1);
-            Controls.Add(textBox1);
-            Controls.Add(label1);
-            Name = "txtHoTen";
-            Text = "Form1";
-            Load += txtHoTen_Load;
+            Controls.Add(lb1);
+            Controls.Add(txtHoTen);
+            Name = "Form1";
+            Text = "Đổi kiểu chữ";
             groupBox1.ResumeLayout(false);
             groupBox1.PerformLayout();
             ResumeLayout(false);
@@ -147,14 +156,14 @@
 
         #endregion
 
-        private Label label1;
-        private TextBox textBox1;
+        private TextBox txtHoTen;
+        private Label lb1;
         private GroupBox groupBox1;
-        private Button btnThoat;
-        private Button btnXoa;
         private RadioButton rdoChuhoa;
         private RadioButton rdoChuthuong;
-        private Button btnKq;
-        private TextBox textBox2;
+        private Button btnXoa;
+        private Button btnThoat;
+        private Button btnKQ;
+        private TextBox txtKQ;
     }
 }

@@ -1,4 +1,4 @@
-namespace Buoi3_bai5
+namespace Buoi03_Bai_5
 {
     internal static class Program
     {

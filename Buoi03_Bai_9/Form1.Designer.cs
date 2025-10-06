@@ -1,4 +1,4 @@
-﻿namespace Buoi3_bai9
+﻿namespace Buoi03_Bai_9
 {
     partial class Form1
     {
@@ -28,275 +28,290 @@
         /// </summary>
         private void InitializeComponent()
         {
-            label1 = new Label();
             groupBox1 = new GroupBox();
-            chkLam = new CheckBox();
-            chkHoc = new CheckBox();
-            groupBox2 = new GroupBox();
-            rdNu = new RadioButton();
-            rdNam = new RadioButton();
-            Time = new DateTimePicker();
-            txtEmail = new TextBox();
-            txtDienthoai = new TextBox();
-            txtDiachi = new TextBox();
-            txtTen = new TextBox();
+            cboxLam = new CheckBox();
+            cboxHoc = new CheckBox();
             label8 = new Label();
+            pickNgaySinh = new DateTimePicker();
             label7 = new Label();
+            txtEmail = new TextBox();
             label6 = new Label();
+            txtDienThoai = new TextBox();
             label5 = new Label();
+            txtDiaChi = new TextBox();
             label4 = new Label();
+            groupBox2 = new GroupBox();
+            rdoNu = new RadioButton();
+            rdoNam = new RadioButton();
             label3 = new Label();
             label2 = new Label();
+            txtTen = new TextBox();
+            label1 = new Label();
             btnHien = new Button();
             btnThoat = new Button();
-            grpHinh = new GroupBox();
+            groupBox3 = new GroupBox();
             pictureBox1 = new PictureBox();
             groupBox1.SuspendLayout();
             groupBox2.SuspendLayout();
-            grpHinh.SuspendLayout();
+            groupBox3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
-            // label1
-            // 
-            label1.AutoSize = true;
-            label1.Font = new Font("Times New Roman", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label1.Location = new Point(288, 27);
-            label1.Name = "label1";
-            label1.Size = new Size(252, 27);
-            label1.TabIndex = 0;
-            label1.Text = "THÔNG TIN CÁ NHÂN";
-            label1.Click += label1_Click;
-            // 
             // groupBox1
             // 
-            groupBox1.Controls.Add(chkLam);
-            groupBox1.Controls.Add(chkHoc);
-            groupBox1.Controls.Add(groupBox2);
-            groupBox1.Controls.Add(Time);
-            groupBox1.Controls.Add(txtEmail);
-            groupBox1.Controls.Add(txtDienthoai);
-            groupBox1.Controls.Add(txtDiachi);
-            groupBox1.Controls.Add(txtTen);
+            groupBox1.Controls.Add(cboxLam);
+            groupBox1.Controls.Add(cboxHoc);
             groupBox1.Controls.Add(label8);
+            groupBox1.Controls.Add(pickNgaySinh);
             groupBox1.Controls.Add(label7);
+            groupBox1.Controls.Add(txtEmail);
             groupBox1.Controls.Add(label6);
+            groupBox1.Controls.Add(txtDienThoai);
             groupBox1.Controls.Add(label5);
+            groupBox1.Controls.Add(txtDiaChi);
             groupBox1.Controls.Add(label4);
+            groupBox1.Controls.Add(groupBox2);
             groupBox1.Controls.Add(label3);
             groupBox1.Controls.Add(label2);
-            groupBox1.Location = new Point(58, 83);
+            groupBox1.Controls.Add(txtTen);
+            groupBox1.Location = new Point(100, 112);
+            groupBox1.Margin = new Padding(5, 3, 5, 3);
             groupBox1.Name = "groupBox1";
-            groupBox1.Size = new Size(524, 444);
-            groupBox1.TabIndex = 1;
+            groupBox1.Padding = new Padding(5, 3, 5, 3);
+            groupBox1.Size = new Size(616, 526);
+            groupBox1.TabIndex = 5;
             groupBox1.TabStop = false;
-            groupBox1.Text = "s";
+            groupBox1.Text = "Thong tin";
             // 
-            // chkLam
+            // cboxLam
             // 
-            chkLam.AutoSize = true;
-            chkLam.Location = new Point(322, 380);
-            chkLam.Name = "chkLam";
-            chkLam.Size = new Size(135, 29);
-            chkLam.TabIndex = 14;
-            chkLam.Text = "Đang đi làm";
-            chkLam.UseVisualStyleBackColor = true;
+            cboxLam.AutoSize = true;
+            cboxLam.Location = new Point(372, 444);
+            cboxLam.Name = "cboxLam";
+            cboxLam.Size = new Size(154, 31);
+            cboxLam.TabIndex = 26;
+            cboxLam.Text = "Dang di lam";
+            cboxLam.UseVisualStyleBackColor = true;
             // 
-            // chkHoc
+            // cboxHoc
             // 
-            chkHoc.AutoSize = true;
-            chkHoc.Location = new Point(181, 380);
-            chkHoc.Name = "chkHoc";
-            chkHoc.Size = new Size(135, 29);
-            chkHoc.TabIndex = 13;
-            chkHoc.Text = "Đang đi học";
-            chkHoc.UseVisualStyleBackColor = true;
-            // 
-            // groupBox2
-            // 
-            groupBox2.Controls.Add(rdNu);
-            groupBox2.Controls.Add(rdNam);
-            groupBox2.Location = new Point(149, 95);
-            groupBox2.Name = "groupBox2";
-            groupBox2.Size = new Size(300, 63);
-            groupBox2.TabIndex = 12;
-            groupBox2.TabStop = false;
-            // 
-            // rdNu
-            // 
-            rdNu.AutoSize = true;
-            rdNu.Location = new Point(131, 16);
-            rdNu.Name = "rdNu";
-            rdNu.Size = new Size(61, 29);
-            rdNu.TabIndex = 1;
-            rdNu.TabStop = true;
-            rdNu.Text = "Nữ";
-            rdNu.UseVisualStyleBackColor = true;
-            // 
-            // rdNam
-            // 
-            rdNam.AutoSize = true;
-            rdNam.Location = new Point(12, 16);
-            rdNam.Name = "rdNam";
-            rdNam.Size = new Size(75, 29);
-            rdNam.TabIndex = 0;
-            rdNam.TabStop = true;
-            rdNam.Text = "Nam";
-            rdNam.UseVisualStyleBackColor = true;
-            // 
-            // Time
-            // 
-            Time.Location = new Point(149, 157);
-            Time.Name = "Time";
-            Time.Size = new Size(300, 31);
-            Time.TabIndex = 11;
-            // 
-            // txtEmail
-            // 
-            txtEmail.Location = new Point(152, 321);
-            txtEmail.Name = "txtEmail";
-            txtEmail.Size = new Size(297, 31);
-            txtEmail.TabIndex = 10;
-            // 
-            // txtDienthoai
-            // 
-            txtDienthoai.Location = new Point(152, 269);
-            txtDienthoai.Name = "txtDienthoai";
-            txtDienthoai.Size = new Size(297, 31);
-            txtDienthoai.TabIndex = 9;
-            // 
-            // txtDiachi
-            // 
-            txtDiachi.Location = new Point(152, 210);
-            txtDiachi.Name = "txtDiachi";
-            txtDiachi.Size = new Size(297, 31);
-            txtDiachi.TabIndex = 8;
-            // 
-            // txtTen
-            // 
-            txtTen.Location = new Point(152, 58);
-            txtTen.Name = "txtTen";
-            txtTen.Size = new Size(297, 31);
-            txtTen.TabIndex = 7;
+            cboxHoc.AutoSize = true;
+            cboxHoc.Location = new Point(183, 444);
+            cboxHoc.Name = "cboxHoc";
+            cboxHoc.Size = new Size(154, 31);
+            cboxHoc.TabIndex = 25;
+            cboxHoc.Text = "Dang di hoc";
+            cboxHoc.UseVisualStyleBackColor = true;
             // 
             // label8
             // 
             label8.AutoSize = true;
-            label8.Location = new Point(43, 364);
+            label8.Location = new Point(46, 444);
             label8.Name = "label8";
-            label8.Size = new Size(92, 25);
-            label8.TabIndex = 6;
-            label8.Text = "Tình trạng";
+            label8.Size = new Size(122, 27);
+            label8.TabIndex = 24;
+            label8.Text = "Tinh Trang:";
+            // 
+            // pickNgaySinh
+            // 
+            pickNgaySinh.CustomFormat = "dd/MM/yyyy";
+            pickNgaySinh.Format = DateTimePickerFormat.Custom;
+            pickNgaySinh.Location = new Point(169, 165);
+            pickNgaySinh.Name = "pickNgaySinh";
+            pickNgaySinh.ShowUpDown = true;
+            pickNgaySinh.Size = new Size(372, 35);
+            pickNgaySinh.TabIndex = 23;
+            pickNgaySinh.Value = new DateTime(2025, 10, 3, 0, 0, 0, 0);
             // 
             // label7
             // 
             label7.AutoSize = true;
-            label7.Location = new Point(43, 321);
+            label7.Location = new Point(46, 367);
             label7.Name = "label7";
-            label7.Size = new Size(54, 25);
-            label7.TabIndex = 5;
-            label7.Text = "Email";
+            label7.Size = new Size(80, 27);
+            label7.TabIndex = 22;
+            label7.Text = "Email: ";
+            // 
+            // txtEmail
+            // 
+            txtEmail.Location = new Point(169, 364);
+            txtEmail.Margin = new Padding(5, 3, 5, 3);
+            txtEmail.Name = "txtEmail";
+            txtEmail.Size = new Size(372, 35);
+            txtEmail.TabIndex = 21;
             // 
             // label6
             // 
             label6.AutoSize = true;
-            label6.Location = new Point(43, 269);
+            label6.Location = new Point(46, 301);
             label6.Name = "label6";
-            label6.Size = new Size(93, 25);
-            label6.TabIndex = 4;
-            label6.Text = "Điện thoại";
+            label6.Size = new Size(118, 27);
+            label6.TabIndex = 20;
+            label6.Text = "Dien thoai:";
+            // 
+            // txtDienThoai
+            // 
+            txtDienThoai.Location = new Point(169, 298);
+            txtDienThoai.Margin = new Padding(5, 3, 5, 3);
+            txtDienThoai.Name = "txtDienThoai";
+            txtDienThoai.Size = new Size(372, 35);
+            txtDienThoai.TabIndex = 19;
             // 
             // label5
             // 
             label5.AutoSize = true;
-            label5.Location = new Point(43, 216);
+            label5.Location = new Point(46, 232);
             label5.Name = "label5";
-            label5.Size = new Size(65, 25);
-            label5.TabIndex = 3;
-            label5.Text = "Địa chỉ";
+            label5.Size = new Size(87, 27);
+            label5.TabIndex = 18;
+            label5.Text = "Dia chi:";
+            // 
+            // txtDiaChi
+            // 
+            txtDiaChi.Location = new Point(169, 229);
+            txtDiaChi.Margin = new Padding(5, 3, 5, 3);
+            txtDiaChi.Name = "txtDiaChi";
+            txtDiaChi.Size = new Size(372, 35);
+            txtDiaChi.TabIndex = 17;
             // 
             // label4
             // 
             label4.AutoSize = true;
-            label4.Location = new Point(42, 163);
+            label4.Location = new Point(46, 171);
             label4.Name = "label4";
-            label4.Size = new Size(91, 25);
-            label4.TabIndex = 2;
-            label4.Text = "Ngày sinh";
+            label4.Size = new Size(114, 27);
+            label4.TabIndex = 16;
+            label4.Text = "Ngay sinh:";
+            // 
+            // groupBox2
+            // 
+            groupBox2.Controls.Add(rdoNu);
+            groupBox2.Controls.Add(rdoNam);
+            groupBox2.Location = new Point(169, 92);
+            groupBox2.Name = "groupBox2";
+            groupBox2.Size = new Size(300, 54);
+            groupBox2.TabIndex = 14;
+            groupBox2.TabStop = false;
+            // 
+            // rdoNu
+            // 
+            rdoNu.AutoSize = true;
+            rdoNu.Location = new Point(203, 19);
+            rdoNu.Name = "rdoNu";
+            rdoNu.Size = new Size(66, 31);
+            rdoNu.TabIndex = 15;
+            rdoNu.TabStop = true;
+            rdoNu.Text = "Nu";
+            rdoNu.UseVisualStyleBackColor = true;
+            // 
+            // rdoNam
+            // 
+            rdoNam.AutoSize = true;
+            rdoNam.Location = new Point(45, 19);
+            rdoNam.Name = "rdoNam";
+            rdoNam.Size = new Size(83, 31);
+            rdoNam.TabIndex = 0;
+            rdoNam.TabStop = true;
+            rdoNam.Text = "Nam";
+            rdoNam.UseVisualStyleBackColor = true;
             // 
             // label3
             // 
             label3.AutoSize = true;
-            label3.Location = new Point(42, 111);
+            label3.Location = new Point(46, 113);
             label3.Name = "label3";
-            label3.Size = new Size(78, 25);
-            label3.TabIndex = 1;
-            label3.Text = "Giới tính";
+            label3.Size = new Size(108, 27);
+            label3.TabIndex = 13;
+            label3.Text = "Gioi Tinh:";
             // 
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(42, 58);
+            label2.Location = new Point(46, 54);
             label2.Name = "label2";
-            label2.Size = new Size(66, 25);
-            label2.TabIndex = 0;
-            label2.Text = "Họ tên";
+            label2.Size = new Size(83, 27);
+            label2.TabIndex = 12;
+            label2.Text = "Ho ten:";
+            // 
+            // txtTen
+            // 
+            txtTen.Location = new Point(169, 51);
+            txtTen.Margin = new Padding(5, 3, 5, 3);
+            txtTen.Name = "txtTen";
+            txtTen.Size = new Size(372, 35);
+            txtTen.TabIndex = 11;
+            // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Font = new Font("Times New Roman", 17F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label1.Location = new Point(314, 54);
+            label1.Margin = new Padding(4, 0, 4, 0);
+            label1.Name = "label1";
+            label1.Size = new Size(364, 39);
+            label1.TabIndex = 6;
+            label1.Text = "THONG TIN CA NHAN";
             // 
             // btnHien
             // 
-            btnHien.Location = new Point(59, 566);
+            btnHien.Location = new Point(100, 666);
             btnHien.Name = "btnHien";
-            btnHien.Size = new Size(180, 34);
-            btnHien.TabIndex = 2;
-            btnHien.Text = "Hiện Thông Tin";
+            btnHien.Size = new Size(246, 63);
+            btnHien.TabIndex = 7;
+            btnHien.Text = "Hien thong tin";
             btnHien.UseVisualStyleBackColor = true;
             btnHien.Click += btnHien_Click;
             // 
             // btnThoat
             // 
-            btnThoat.Location = new Point(310, 566);
+            btnThoat.Location = new Point(432, 666);
             btnThoat.Name = "btnThoat";
-            btnThoat.Size = new Size(112, 34);
-            btnThoat.TabIndex = 3;
-            btnThoat.Text = "Thoát";
+            btnThoat.Size = new Size(246, 63);
+            btnThoat.TabIndex = 8;
+            btnThoat.Text = "Thoat";
             btnThoat.UseVisualStyleBackColor = true;
             btnThoat.Click += btnThoat_Click;
             // 
-            // grpHinh
+            // groupBox3
             // 
-            grpHinh.Controls.Add(pictureBox1);
-            grpHinh.Location = new Point(627, 83);
-            grpHinh.Name = "grpHinh";
-            grpHinh.Size = new Size(203, 241);
-            grpHinh.TabIndex = 4;
-            grpHinh.TabStop = false;
-            grpHinh.Text = "Hình ảnh";
+            groupBox3.Controls.Add(pictureBox1);
+            groupBox3.Location = new Point(780, 82);
+            groupBox3.Name = "groupBox3";
+            groupBox3.Size = new Size(300, 308);
+            groupBox3.TabIndex = 9;
+            groupBox3.TabStop = false;
+            groupBox3.Text = "Hinh anh";
             // 
             // pictureBox1
             // 
-            pictureBox1.Location = new Point(31, 49);
+            pictureBox1.Image = Properties.Resources.Screenshot_2025_02_04_141522;
+            pictureBox1.Location = new Point(36, 34);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(150, 176);
+            pictureBox1.Size = new Size(258, 265);
             pictureBox1.TabIndex = 0;
             pictureBox1.TabStop = false;
+            pictureBox1.Click += pictureBox1_Click;
             // 
             // Form1
             // 
-            AutoScaleDimensions = new SizeF(10F, 25F);
+            AutoScaleDimensions = new SizeF(13F, 27F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(859, 672);
-            Controls.Add(grpHinh);
+            AutoSize = true;
+            ClientSize = new Size(1106, 801);
+            Controls.Add(groupBox3);
             Controls.Add(btnThoat);
             Controls.Add(btnHien);
-            Controls.Add(groupBox1);
             Controls.Add(label1);
+            Controls.Add(groupBox1);
+            Font = new Font("Times New Roman", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            Margin = new Padding(4, 3, 4, 3);
             Name = "Form1";
-            Text = "Form1";
+            Text = "Bai9";
             groupBox1.ResumeLayout(false);
             groupBox1.PerformLayout();
             groupBox2.ResumeLayout(false);
             groupBox2.PerformLayout();
-            grpHinh.ResumeLayout(false);
+            groupBox3.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
             PerformLayout();
@@ -304,28 +319,28 @@
 
         #endregion
 
-        private Label label1;
         private GroupBox groupBox1;
-        private DateTimePicker Time;
-        private TextBox txtEmail;
-        private TextBox txtDienthoai;
-        private TextBox txtDiachi;
         private TextBox txtTen;
-        private Label label8;
-        private Label label7;
-        private Label label6;
-        private Label label5;
-        private Label label4;
-        private Label label3;
+        private Label label1;
         private Label label2;
-        private CheckBox chkHoc;
         private GroupBox groupBox2;
-        private RadioButton rdNu;
-        private RadioButton rdNam;
-        private CheckBox chkLam;
+        private Label label3;
+        private Label label7;
+        private TextBox txtEmail;
+        private Label label6;
+        private TextBox txtDienThoai;
+        private Label label5;
+        private TextBox txtDiaChi;
+        private Label label4;
+        private RadioButton rdoNu;
+        private RadioButton rdoNam;
+        private DateTimePicker pickNgaySinh;
+        private CheckBox cboxLam;
+        private CheckBox cboxHoc;
+        private Label label8;
         private Button btnHien;
         private Button btnThoat;
-        private GroupBox grpHinh;
+        private GroupBox groupBox3;
         private PictureBox pictureBox1;
     }
 }

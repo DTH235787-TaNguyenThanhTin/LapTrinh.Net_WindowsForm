@@ -1,4 +1,4 @@
-﻿namespace Buoi3_bai7
+﻿namespace Buoi03_Bai_7
 {
     partial class Form1
     {
@@ -29,19 +29,19 @@
         private void InitializeComponent()
         {
             menuStrip1 = new MenuStrip();
-            toolStripMenuItem1 = new ToolStripMenuItem();
-            tongToolStripMenuItem = new ToolStripMenuItem();
-            hieuToolStripMenuItem = new ToolStripMenuItem();
-            tichToolStripMenuItem = new ToolStripMenuItem();
-            thuongToolStripMenuItem = new ToolStripMenuItem();
-            label1 = new Label();
+            tinhToanToolStripMenuItem = new ToolStripMenuItem();
+            stripTong = new ToolStripMenuItem();
+            stripHieu = new ToolStripMenuItem();
+            stripTich = new ToolStripMenuItem();
+            stripThuong = new ToolStripMenuItem();
             groupBox1 = new GroupBox();
-            txtB = new TextBox();
-            txtA = new TextBox();
             label3 = new Label();
+            txtb = new TextBox();
             label2 = new Label();
-            txtKq = new TextBox();
+            txta = new TextBox();
+            label1 = new Label();
             label4 = new Label();
+            txtKQ = new TextBox();
             menuStrip1.SuspendLayout();
             groupBox1.SuspendLayout();
             SuspendLayout();
@@ -49,133 +49,143 @@
             // menuStrip1
             // 
             menuStrip1.ImageScalingSize = new Size(24, 24);
-            menuStrip1.Items.AddRange(new ToolStripItem[] { toolStripMenuItem1 });
+            menuStrip1.Items.AddRange(new ToolStripItem[] { tinhToanToolStripMenuItem });
             menuStrip1.Location = new Point(0, 0);
             menuStrip1.Name = "menuStrip1";
-            menuStrip1.Size = new Size(800, 33);
+            menuStrip1.Padding = new Padding(8, 2, 0, 2);
+            menuStrip1.Size = new Size(617, 33);
             menuStrip1.TabIndex = 0;
-            menuStrip1.Text = "Tinh toan";
+            menuStrip1.Text = "menuStrip1";
             // 
-            // toolStripMenuItem1
+            // tinhToanToolStripMenuItem
             // 
-            toolStripMenuItem1.DropDownItems.AddRange(new ToolStripItem[] { tongToolStripMenuItem, hieuToolStripMenuItem, tichToolStripMenuItem, thuongToolStripMenuItem });
-            toolStripMenuItem1.Name = "toolStripMenuItem1";
-            toolStripMenuItem1.Size = new Size(103, 29);
-            toolStripMenuItem1.Text = "Tinh Toan";
+            tinhToanToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { stripTong, stripHieu, stripTich, stripThuong });
+            tinhToanToolStripMenuItem.Name = "tinhToanToolStripMenuItem";
+            tinhToanToolStripMenuItem.Size = new Size(103, 29);
+            tinhToanToolStripMenuItem.Text = "Tinh Toan";
             // 
-            // tongToolStripMenuItem
+            // stripTong
             // 
-            tongToolStripMenuItem.Name = "tongToolStripMenuItem";
-            tongToolStripMenuItem.Size = new Size(270, 34);
-            tongToolStripMenuItem.Text = "Tong";
-            tongToolStripMenuItem.Click += tongToolStripMenuItem_Click_1;
+            stripTong.Name = "stripTong";
+            stripTong.Size = new Size(270, 34);
+            stripTong.Text = "Tong";
+            stripTong.Click += stripTong_Click;
             // 
-            // hieuToolStripMenuItem
+            // stripHieu
             // 
-            hieuToolStripMenuItem.Name = "hieuToolStripMenuItem";
-            hieuToolStripMenuItem.Size = new Size(270, 34);
-            hieuToolStripMenuItem.Text = "Hieu";
-            hieuToolStripMenuItem.Click += hieuToolStripMenuItem_Click;
+            stripHieu.Name = "stripHieu";
+            stripHieu.Size = new Size(270, 34);
+            stripHieu.Text = "Hieu";
+            stripHieu.Click += stripHieu_Click;
             // 
-            // tichToolStripMenuItem
+            // stripTich
             // 
-            tichToolStripMenuItem.Name = "tichToolStripMenuItem";
-            tichToolStripMenuItem.Size = new Size(270, 34);
-            tichToolStripMenuItem.Text = "Tich";
-            tichToolStripMenuItem.Click += tichToolStripMenuItem_Click;
+            stripTich.Name = "stripTich";
+            stripTich.Size = new Size(270, 34);
+            stripTich.Text = "Tich";
+            stripTich.Click += stripTich_Click;
             // 
-            // thuongToolStripMenuItem
+            // stripThuong
             // 
-            thuongToolStripMenuItem.Name = "thuongToolStripMenuItem";
-            thuongToolStripMenuItem.Size = new Size(270, 34);
-            thuongToolStripMenuItem.Text = "Thuong";
-            thuongToolStripMenuItem.Click += thuongToolStripMenuItem_Click;
-            // 
-            // label1
-            // 
-            label1.AutoSize = true;
-            label1.Location = new Point(289, 79);
-            label1.Name = "label1";
-            label1.Size = new Size(173, 25);
-            label1.TabIndex = 1;
-            label1.Text = "Phep Toan Don Gian";
-            label1.Click += label1_Click;
+            stripThuong.Name = "stripThuong";
+            stripThuong.Size = new Size(270, 34);
+            stripThuong.Text = "Thuong";
+            stripThuong.Click += stripThuong_Click;
             // 
             // groupBox1
             // 
-            groupBox1.Controls.Add(txtB);
-            groupBox1.Controls.Add(txtA);
             groupBox1.Controls.Add(label3);
+            groupBox1.Controls.Add(txtb);
             groupBox1.Controls.Add(label2);
-            groupBox1.Location = new Point(255, 171);
+            groupBox1.Controls.Add(txta);
+            groupBox1.Location = new Point(102, 133);
+            groupBox1.Margin = new Padding(5, 3, 5, 3);
             groupBox1.Name = "groupBox1";
-            groupBox1.Size = new Size(300, 150);
-            groupBox1.TabIndex = 2;
+            groupBox1.Padding = new Padding(5, 3, 5, 3);
+            groupBox1.Size = new Size(404, 197);
+            groupBox1.TabIndex = 5;
             groupBox1.TabStop = false;
-            groupBox1.Text = "Thông tin";
-            groupBox1.Enter += groupBox1_Enter;
-            // 
-            // txtB
-            // 
-            txtB.Location = new Point(118, 97);
-            txtB.Name = "txtB";
-            txtB.Size = new Size(150, 31);
-            txtB.TabIndex = 3;
-            // 
-            // txtA
-            // 
-            txtA.Location = new Point(118, 55);
-            txtA.Name = "txtA";
-            txtA.Size = new Size(150, 31);
-            txtA.TabIndex = 2;
+            groupBox1.Text = "Thong tin";
             // 
             // label3
             // 
             label3.AutoSize = true;
-            label3.Location = new Point(28, 103);
+            label3.Location = new Point(60, 114);
             label3.Name = "label3";
-            label3.Size = new Size(71, 25);
-            label3.TabIndex = 1;
-            label3.Text = "Nhập b";
+            label3.Size = new Size(30, 27);
+            label3.TabIndex = 14;
+            label3.Text = "b:";
+            // 
+            // txtb
+            // 
+            txtb.Location = new Point(117, 106);
+            txtb.Margin = new Padding(5, 3, 5, 3);
+            txtb.Name = "txtb";
+            txtb.Size = new Size(259, 35);
+            txtb.TabIndex = 13;
             // 
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(28, 55);
+            label2.Location = new Point(60, 53);
             label2.Name = "label2";
-            label2.Size = new Size(69, 25);
-            label2.TabIndex = 0;
-            label2.Text = "Nhập a";
+            label2.Size = new Size(29, 27);
+            label2.TabIndex = 12;
+            label2.Text = "a:";
             // 
-            // txtKq
+            // txta
             // 
-            txtKq.Location = new Point(373, 360);
-            txtKq.Name = "txtKq";
-            txtKq.Size = new Size(150, 31);
-            txtKq.TabIndex = 3;
-            txtKq.TextChanged += txtKq_TextChanged;
+            txta.Location = new Point(117, 45);
+            txta.Margin = new Padding(5, 3, 5, 3);
+            txta.Name = "txta";
+            txta.Size = new Size(259, 35);
+            txta.TabIndex = 11;
+            // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Font = new Font("Times New Roman", 15F);
+            label1.Location = new Point(122, 60);
+            label1.Margin = new Padding(4, 0, 4, 0);
+            label1.Name = "label1";
+            label1.Size = new Size(334, 34);
+            label1.TabIndex = 6;
+            label1.Text = "PHEP TOAN DON GIAN";
             // 
             // label4
             // 
             label4.AutoSize = true;
-            label4.Location = new Point(283, 365);
+            label4.Location = new Point(99, 354);
             label4.Name = "label4";
-            label4.Size = new Size(72, 25);
-            label4.TabIndex = 4;
-            label4.Text = "Kết quả";
+            label4.Size = new Size(93, 27);
+            label4.TabIndex = 16;
+            label4.Text = "KetQua:";
+            // 
+            // txtKQ
+            // 
+            txtKQ.BackColor = SystemColors.Control;
+            txtKQ.Location = new Point(219, 346);
+            txtKQ.Margin = new Padding(5, 3, 5, 3);
+            txtKQ.Name = "txtKQ";
+            txtKQ.Size = new Size(259, 35);
+            txtKQ.TabIndex = 15;
             // 
             // Form1
             // 
-            AutoScaleDimensions = new SizeF(10F, 25F);
+            AutoScaleDimensions = new SizeF(13F, 27F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
+            AutoSize = true;
+            ClientSize = new Size(617, 462);
             Controls.Add(label4);
-            Controls.Add(txtKq);
-            Controls.Add(groupBox1);
             Controls.Add(label1);
+            Controls.Add(txtKQ);
+            Controls.Add(groupBox1);
             Controls.Add(menuStrip1);
+            Font = new Font("Times New Roman", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            MainMenuStrip = menuStrip1;
+            Margin = new Padding(4, 3, 4, 3);
             Name = "Form1";
-            Load += Form1_Load;
+            Text = "Bai";
             menuStrip1.ResumeLayout(false);
             menuStrip1.PerformLayout();
             groupBox1.ResumeLayout(false);
@@ -187,18 +197,18 @@
         #endregion
 
         private MenuStrip menuStrip1;
-        private ToolStripMenuItem toolStripMenuItem1;
-        private ToolStripMenuItem tongToolStripMenuItem;
-        private ToolStripMenuItem hieuToolStripMenuItem;
-        private ToolStripMenuItem tichToolStripMenuItem;
-        private ToolStripMenuItem thuongToolStripMenuItem;
-        private Label label1;
+        private ToolStripMenuItem tinhToanToolStripMenuItem;
+        private ToolStripMenuItem stripTong;
+        private ToolStripMenuItem stripHieu;
+        private ToolStripMenuItem stripTich;
+        private ToolStripMenuItem stripThuong;
         private GroupBox groupBox1;
-        private TextBox txtB;
-        private TextBox txtA;
+        private TextBox txta;
+        private Label label1;
         private Label label3;
+        private TextBox txtb;
         private Label label2;
-        private TextBox txtKq;
         private Label label4;
+        private TextBox txtKQ;
     }
 }

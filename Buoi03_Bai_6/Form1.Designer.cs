@@ -1,6 +1,6 @@
-﻿namespace Buoi3_bai6
+﻿namespace Buoi03_Bai_6
 {
-    partial class lstTen
+    partial class Form1
     {
         /// <summary>
         ///  Required designer variable.
@@ -32,129 +32,139 @@
             txtChuoi = new TextBox();
             btnThem = new Button();
             btnXoa = new Button();
-            btnMauchu = new Button();
-            btnMaunen = new Button();
-            btnFont = new Button();
+            txtKQ = new TextBox();
+            btnChu = new Button();
+            btnNen = new Button();
+            BtnFont = new Button();
             btnDong = new Button();
-            txtKq = new TextBox();
-            lstChuoi = new ListBox();
+            listbox = new ListBox();
             groupBox1.SuspendLayout();
             SuspendLayout();
             // 
             // groupBox1
             // 
             groupBox1.Controls.Add(txtChuoi);
-            groupBox1.Location = new Point(37, 32);
+            groupBox1.Location = new Point(39, 42);
+            groupBox1.Margin = new Padding(4, 3, 4, 3);
             groupBox1.Name = "groupBox1";
-            groupBox1.Size = new Size(269, 78);
-            groupBox1.TabIndex = 0;
+            groupBox1.Padding = new Padding(4, 3, 4, 3);
+            groupBox1.Size = new Size(311, 96);
+            groupBox1.TabIndex = 4;
             groupBox1.TabStop = false;
             groupBox1.Text = "Nhập chuỗi";
             // 
             // txtChuoi
             // 
-            txtChuoi.Location = new Point(6, 41);
+            txtChuoi.Location = new Point(8, 43);
+            txtChuoi.Margin = new Padding(4, 3, 4, 3);
             txtChuoi.Name = "txtChuoi";
-            txtChuoi.Size = new Size(257, 31);
-            txtChuoi.TabIndex = 0;
+            txtChuoi.Size = new Size(287, 35);
+            txtChuoi.TabIndex = 11;
             // 
             // btnThem
             // 
-            btnThem.Location = new Point(28, 143);
+            btnThem.Location = new Point(39, 145);
+            btnThem.Margin = new Padding(4, 3, 4, 3);
             btnThem.Name = "btnThem";
-            btnThem.Size = new Size(112, 34);
-            btnThem.TabIndex = 1;
+            btnThem.Size = new Size(135, 43);
+            btnThem.TabIndex = 15;
             btnThem.Text = "Thêm";
             btnThem.UseVisualStyleBackColor = true;
             btnThem.Click += btnThem_Click;
             // 
             // btnXoa
             // 
-            btnXoa.Location = new Point(172, 143);
+            btnXoa.Location = new Point(214, 145);
+            btnXoa.Margin = new Padding(4, 3, 4, 3);
             btnXoa.Name = "btnXoa";
-            btnXoa.Size = new Size(128, 34);
-            btnXoa.TabIndex = 2;
-            btnXoa.Text = "Xoá";
+            btnXoa.Size = new Size(135, 43);
+            btnXoa.TabIndex = 16;
+            btnXoa.Text = "Xóa";
             btnXoa.UseVisualStyleBackColor = true;
             btnXoa.Click += btnXoa_Click;
             // 
-            // btnMauchu
+            // txtKQ
             // 
-            btnMauchu.Location = new Point(328, 206);
-            btnMauchu.Name = "btnMauchu";
-            btnMauchu.Size = new Size(154, 34);
-            btnMauchu.TabIndex = 5;
-            btnMauchu.Text = "Chọn màu chữ";
-            btnMauchu.UseVisualStyleBackColor = true;
-            btnMauchu.Click += btnMauchu_Click;
+            txtKQ.Location = new Point(374, 53);
+            txtKQ.Margin = new Padding(4, 3, 4, 3);
+            txtKQ.Multiline = true;
+            txtKQ.Name = "txtKQ";
+            txtKQ.Size = new Size(546, 123);
+            txtKQ.TabIndex = 12;
             // 
-            // btnMaunen
+            // btnChu
             // 
-            btnMaunen.Location = new Point(488, 206);
-            btnMaunen.Name = "btnMaunen";
-            btnMaunen.Size = new Size(154, 34);
-            btnMaunen.TabIndex = 6;
-            btnMaunen.Text = "Chọn màu nền";
-            btnMaunen.UseVisualStyleBackColor = true;
-            btnMaunen.Click += btnMaunen_Click;
+            btnChu.Location = new Point(374, 191);
+            btnChu.Margin = new Padding(4, 3, 4, 3);
+            btnChu.Name = "btnChu";
+            btnChu.Size = new Size(169, 52);
+            btnChu.TabIndex = 17;
+            btnChu.Text = "Chọn màu chữ";
+            btnChu.UseVisualStyleBackColor = true;
+            btnChu.Click += btnChu_Click;
             // 
-            // btnFont
+            // btnNen
             // 
-            btnFont.Location = new Point(648, 206);
-            btnFont.Name = "btnFont";
-            btnFont.Size = new Size(115, 34);
-            btnFont.TabIndex = 7;
-            btnFont.Text = "Chọn Font";
-            btnFont.UseVisualStyleBackColor = true;
-            btnFont.Click += btnFont_Click;
+            btnNen.Location = new Point(562, 191);
+            btnNen.Margin = new Padding(4, 3, 4, 3);
+            btnNen.Name = "btnNen";
+            btnNen.Size = new Size(169, 52);
+            btnNen.TabIndex = 18;
+            btnNen.Text = "Chọn màu nền";
+            btnNen.UseVisualStyleBackColor = true;
+            btnNen.Click += btnNen_Click;
+            // 
+            // BtnFont
+            // 
+            BtnFont.Location = new Point(751, 191);
+            BtnFont.Margin = new Padding(4, 3, 4, 3);
+            BtnFont.Name = "BtnFont";
+            BtnFont.Size = new Size(169, 52);
+            BtnFont.TabIndex = 19;
+            BtnFont.Text = "Chọn Font";
+            BtnFont.UseVisualStyleBackColor = true;
+            BtnFont.Click += BtnFont_Click;
             // 
             // btnDong
             // 
-            btnDong.Location = new Point(488, 286);
+            btnDong.Location = new Point(562, 277);
+            btnDong.Margin = new Padding(4, 3, 4, 3);
             btnDong.Name = "btnDong";
-            btnDong.Size = new Size(154, 34);
-            btnDong.TabIndex = 8;
+            btnDong.Size = new Size(169, 52);
+            btnDong.TabIndex = 20;
             btnDong.Text = "Đóng";
             btnDong.UseVisualStyleBackColor = true;
             btnDong.Click += btnDong_Click;
             // 
-            // txtKq
+            // listbox
             // 
-            txtKq.Location = new Point(328, 48);
-            txtKq.Multiline = true;
-            txtKq.Name = "txtKq";
-            txtKq.RightToLeft = RightToLeft.No;
-            txtKq.Size = new Size(425, 125);
-            txtKq.TabIndex = 9;
-            txtKq.TextChanged += txtKq_TextChanged;
+            listbox.FormattingEnabled = true;
+            listbox.ItemHeight = 27;
+            listbox.Location = new Point(39, 194);
+            listbox.Name = "listbox";
+            listbox.Size = new Size(310, 139);
+            listbox.TabIndex = 21;
+            listbox.SelectedIndexChanged += listbox_SelectedIndexChanged;
             // 
-            // lstChuoi
+            // Form1
             // 
-            lstChuoi.FormattingEnabled = true;
-            lstChuoi.ItemHeight = 25;
-            lstChuoi.Location = new Point(12, 206);
-            lstChuoi.Name = "lstChuoi";
-            lstChuoi.Size = new Size(294, 179);
-            lstChuoi.TabIndex = 10;
-            lstChuoi.SelectedIndexChanged += lstChuoi_DoubleClick;
-            // 
-            // lstTen
-            // 
-            AutoScaleDimensions = new SizeF(10F, 25F);
+            AutoScaleDimensions = new SizeF(13F, 27F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
-            Controls.Add(lstChuoi);
-            Controls.Add(txtKq);
+            AutoSize = true;
+            ClientSize = new Size(988, 378);
+            Controls.Add(listbox);
             Controls.Add(btnDong);
-            Controls.Add(btnFont);
-            Controls.Add(btnMaunen);
-            Controls.Add(btnMauchu);
+            Controls.Add(BtnFont);
+            Controls.Add(btnNen);
+            Controls.Add(btnChu);
+            Controls.Add(txtKQ);
             Controls.Add(btnXoa);
             Controls.Add(btnThem);
             Controls.Add(groupBox1);
-            Name = "lstTen";
-            Text = "Form1";
-            Load += lstTen_Load;
+            Font = new Font("Times New Roman", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            Margin = new Padding(4, 3, 4, 3);
+            Name = "Form1";
+            Text = "Controls";
             groupBox1.ResumeLayout(false);
             groupBox1.PerformLayout();
             ResumeLayout(false);
@@ -164,14 +174,14 @@
         #endregion
 
         private GroupBox groupBox1;
+        private TextBox txtChuoi;
         private Button btnThem;
         private Button btnXoa;
-        private Button btnMauchu;
-        private Button btnMaunen;
-        private Button btnFont;
+        private TextBox txtKQ;
+        private Button btnChu;
+        private Button btnNen;
+        private Button BtnFont;
         private Button btnDong;
-        private TextBox txtKq;
-        private TextBox txtChuoi;
-        private ListBox lstChuoi;
+        private ListBox listbox;
     }
 }

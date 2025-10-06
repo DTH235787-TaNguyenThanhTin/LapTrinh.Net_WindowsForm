@@ -1,4 +1,4 @@
-﻿namespace Buoi3_bai8
+namespace Buoi03_Bai_8
 {
     public partial class Form1 : Form
     {
@@ -7,9 +7,9 @@
             InitializeComponent();
         }
 
-        private void btnHien_Click(object sender, EventArgs e)
+        private void button1_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Xin chào " +this.cboTen.SelectedItem.ToString()+"Chúc một ngày vui vẻ");
+            MessageBox.Show("Xin Chao "+this.cbTen.SelectedItem.ToString()+" Chuc mot ngay vui ve.");
         }
     }
 }
