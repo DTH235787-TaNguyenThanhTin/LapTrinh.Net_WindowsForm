@@ -1,0 +1,18 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <RootNamespace>Buoi02_Bai_4._4</RootNamespace>
+    <Nullable>enable</Nullable>
+    <UseWindowsForms>true</UseWindowsForms>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Buoi02_Bai_2.6\Buoi02_Bai_2.6.csproj" />
+    <ProjectReference Include="..\Buoi02_Bai_2.7\Buoi02_Bai_2.7.csproj" />
+    <ProjectReference Include="..\Buoi02_Bai_3.1\Buoi02_Bai_3.1.csproj" />
+  </ItemGroup>
+
+</Project>
